@@ -1,8 +1,14 @@
 package blog.evgeni.goldfish.token;
 
+import java.util.List;
+
 public record Token(
-    String name,
-    String address,
-    int age,
-    Chain chain
+    String url,
+    String chainId,
+    String tokenAddress,
+    String icon,
+    String header,
+    String openGraph,
+    String description,
+    List<Link> links
 ) {}
